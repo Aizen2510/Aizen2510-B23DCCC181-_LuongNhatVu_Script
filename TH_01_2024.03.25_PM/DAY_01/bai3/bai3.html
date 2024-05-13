@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bai3</title>
+  </head>
+  <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
+.item{
+    /* transition: all .3s ease-in-out; */  margin-top: 100px;
+    padding: 20px 0px;
+    width: 230px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.item img:hover{
+    transform: translateY(-1%);
+    background-color:rgba(11, 237, 26, 0.863);
+}
+.item img{
+    transition: transform 0.3s ease;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+}
+
+.content{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content p{
+    padding: 2px;
+    font-weight: bold;
+}
+.title{
+    color: orange;
+}
+.price{
+    color: red;
+}
+  </style>
+ <body>
+  <div class="main">
+    <div class="item">
+      <img src="https://cdn2.cellphones.com.vn/358x/media/catalog/product/x/n/xnnah_kas_3.png" alt="iPhone 13 128GB" />
+      <div class="content">
+        <p class="title">iPhone 13 128GB</p>
+        <p class="price">13.990.000 VNĐ</p>
+      </div>
+      </div>
+    <div class="item">
+      <img src="https://cdn2.cellphones.com.vn/358x/media/catalog/product/x/i/xiaomi-13t_2__2_2.png" alt="xaomi" />
+      <div class="content">
+        <p class="title">Xiaomi 13T Pro 5G</p>
+        <p class="price">14.990.000 VNĐ</p>
+      </div>
+      </div>
+    <div class="item">
+      <img src="https://cdn2.cellphones.com.vn/358x/media/catalog/product/g/a/galaxy-s24-ultra-vang_1_3.png" alt="is" />
+      <div class="content">
+        <p class="title">Samsung Galaxy S24 Ultra</p>
+        <p class="price">28.690.000 VNĐ</p>
+      </div>
+      </div>
+    <div class="item">
+      <img src="https://cdn2.cellphones.com.vn/358x/media/catalog/product/f/i/find_n3_-_combo_product_-_black_1.png" alt="op" />
+      <div class="content">
+        <p class="title">OPPO Find N3 16GB 512GB</p>
+        <p class="price">41.690.000 VNĐ</p>
+      </div>
+      </div>
+    <div class="item">
+      <img src="https://cdn2.cellphones.com.vn/358x/media/catalog/product/b/l/black_final_2.jpg" alt="s23" />
+      <div class="content">
+        <p class="title">Samsung Galaxy Note 20 Ultra
+        </p>
+        <p class="price">29.990.000 VNĐ</p>
+      </div>
+      </div>
+    <div class="item">
+      <img src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/n/o/nokia-8210_4g-sand-front_back-int.png" alt="nk" />
+      <div class="content">
+        <p class="title">Điện thoại Nokia 8210 4G 128MB</p>
+        <p class="price">1.500.000 VNĐ</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2 </title>
+</head>
+<body>
+    <script>
+        var mang = [2,3,9,41,49,2,0,-12];
+        var moi = mang.length;
+        var mangm = Math.max(...mang);
+        document.write('Số lớn Nhất ',mangm, '<br>');
+        function myF(mang) {
+            rong =[];
+            for(var i of mang){
+                if(i >0 ) {
+                    var n =  Math.sqrt(i);
+                    if (n === Math.floor(n)) {
+                        rong.push(i);
+                    }
+                }
+            }
+            return rong;
+        }
+        rong2 = myF(mang);
+        document.write('Số chính phương ',rong2);
+        function tb(mang){
+            tbc=[];
+            for(var i =0;i<= moi; i++){
+                tbc+=i;
+                for(var x =1; x<=moi; x++) {
+                    var tron =[];
+                    if(x>(tbc/moi)){
+                        tron.push(x);
+                    }
+                }
+            }return tron;
+        }tro2 = tb(mang);
+        document.write('Số chính phương ',tro2);
+    </script>
+</body>
+</html>

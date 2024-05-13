@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="contentA" style="display: block;">
+        <h3>UDU</h3>
+        <div>Sinh viên UDU năng động sáng tạo.</div>
+    </div>
+    <div id="contentB" style="display: none;">
+        <h3>UDU</h3>
+        <div>UDU students are dynamic and creative !!!</div>
+    </div>
+      <button id="changeContentBtn" type="button">Thay đổi</button>
+    <script>
+        $(document).ready(function(){
+            $('#changeContentBtn').click(function(){
+            $('#contentA').toggle();
+            $('#contentB').toggle();
+            });
+        });
+
+    </script>      
+</body>
+</html>

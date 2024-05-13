@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Bài 02</title>
+    <style>
+        .a{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <h1>LIST ITEAM : </h1>
+            <ul>
+                <li>Iphone 11</li>
+                <li>Iphone 12</li>
+                <li>Iphone 13</li>
+            </ul>
+    </div>
+    <div id="a">
+        <input type="text" id="newItem" placeholder="Enter new item"> 
+        <button id="addItem">Add</button>
+        <ul id="itemsList">
+        </ul>
+    </div>
+    <script>
+            $(document).ready(function(){
+                $('#addItem').click(function(){
+                var newItemValue = $('#newItem').val().trim(); 
+            if(newItemValue !== '') {
+                $('#itemsList').append('<li>' + newItemValue + '</li>');
+                $('#newItem').val('');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

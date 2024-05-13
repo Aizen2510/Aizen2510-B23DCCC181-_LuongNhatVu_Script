@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Ex02:
+    </h1>
+    <h3>
+        Tính tổng các số từ 1 đến 10 sử dụng 3 vòng lặp:
+    </h3>
+    <script>
+        var tong = 0;
+        for(var i =1;i<=10;i++) {
+            tong+=i;
+        }
+        document.write("for<br>", tong,"<br>");
+
+
+
+        var x = 0;
+        var b =0;
+        while(x<10) {
+            x++;
+            b+=x;
+        }
+        document.write("while<br>", b, '<br>');
+
+
+        var n = 0; 
+        var m = 0;
+        do{
+            n++;
+            m+=n;
+        }while(n<10);
+        document.write("dowhile<br>", m , '<br>');
+    </script>
+</body>
+</html>

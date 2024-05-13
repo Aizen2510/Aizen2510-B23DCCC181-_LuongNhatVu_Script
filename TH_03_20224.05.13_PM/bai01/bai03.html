@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Bài 03</title>
+    <style>
+        .slideshow-container {
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+            top:50px;
+        }
+
+        .slides {
+            display: flex;
+            overflow-x: hidden;
+            overflow: hidden;
+            border-radius: 10%;
+        }
+
+        .slides img {
+            width: 100%;
+            height: auto;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%,-50%);
+            cursor: pointer;
+            padding: 16px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-weight: bold;
+            z-index: 100;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slides">
+            <img src="a.jpg" alt="Slide 1">
+            <img src="b.jpg" alt="Slide 2">
+            <img src="c.jpg" alt="Slide 3">
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+    <script>
+        $(document).ready(function(){
+            var slideIndex = 0;
+            var slides = $('.slides img');
+            var totalSlides = slides.length;
+
+            function showSlide(index) {
+                slides.hide();
+                slides.eq(index).show();
+            }
+            showSlide(slideIndex);
+
+            setInterval(function(){
+                slideIndex = (slideIndex + 1) % totalSlides;
+                showSlide(slideIndex);
+            }, 5000);
+
+            $('.prev').click(function(){
+                lideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
+                showSlide(slideIndex);
+            });
+
+            $('.next').click(function(){
+                slideIndex = (slideIndex + 1) % totalSlides;
+                showSlide(slideIndex);
+        });
+    });
+
+    </script>
+    
+</body>
+</html>

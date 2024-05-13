@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài thực hành 1 jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<input type="password" id="passwordInput">
+<button id="toggleButton">Hiện/Ẩn Mật khẩu</button>
+
+<script>
+$(document).ready(function() {
+    $('#toggleButton').click(function() {
+        var passwordInput = $('#passwordInput');
+        if (passwordInput.attr('type') === 'password') {
+            passwordInput.attr('type', 'text');
+        } else {
+            passwordInput.attr('type', 'password');
+        }
+    });
+});
+</script>
+
+</body>
+</html>

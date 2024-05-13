@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài thực hành 01 </title>
+</head>
+<body>
+    <script>
+        var mang = [1, 2, 3, 1, 4, 2, 10, 0];
+        var len = mang.length;
+        var trong =[]
+        for (var i = 0; i < len; i++) {
+            for (var j = i + 1; j < len; j++) {
+                if (mang[i] > mang[j]) {
+            
+                    var temp = mang[i];
+                    mang[i] = mang[j];
+                    mang[j] = temp;
+                }
+            }
+        }document.write("Sắp Xếp Mảng : ", mang, "<br>");
+        document.write("\n");
+        for(var l =0; l<len; l++) {
+            if(trong.indexOf(mang[l])===-1){
+                trong.push(mang[l]);
+            }
+        }document.write("Một Số : ", trong);
+    </script>
+</body>
+</html>
